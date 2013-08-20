@@ -16,5 +16,16 @@ namespace MSTestExerciseTest
 
             Assert.AreEqual(1, actual);
         }
+
+        [TestMethod]
+        public void 実行2回目は2が返る()
+        {
+            var sut = new Counter();
+
+            sut.Increment();
+            var actual = sut.Increment();
+
+            Assert.AreEqual(2, actual);
+        }
     }
 }

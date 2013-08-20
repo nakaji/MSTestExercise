@@ -7,9 +7,11 @@ namespace MSTestExercise
 {
     public class Counter
     {
+        private int counter = 0;
+
         public object Increment()
         {
-            return 1;
+            return ++counter;
         }
     }
 }
