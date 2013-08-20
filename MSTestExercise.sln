@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSTestExercise", "MSTestExercise\MSTestExercise.csproj", "{7EE0FC57-C745-4B7C-B3A5-C8388DF55739}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSTestExerciseTest", "MSTestExerciseTest\MSTestExerciseTest.csproj", "{CFF6A5BA-B720-46E9-8925-1DAB1B502B8D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{7EE0FC57-C745-4B7C-B3A5-C8388DF55739}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7EE0FC57-C745-4B7C-B3A5-C8388DF55739}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7EE0FC57-C745-4B7C-B3A5-C8388DF55739}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFF6A5BA-B720-46E9-8925-1DAB1B502B8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFF6A5BA-B720-46E9-8925-1DAB1B502B8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFF6A5BA-B720-46E9-8925-1DAB1B502B8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFF6A5BA-B720-46E9-8925-1DAB1B502B8D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
