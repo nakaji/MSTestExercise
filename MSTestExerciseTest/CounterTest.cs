@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using MSTestExercise;
 
@@ -30,6 +31,15 @@ namespace MSTestExerciseTest
             var actual = _sut.Increment();
 
             Assert.AreEqual(2, actual);
+        }
+        [TestMethod]
+        public void 実行51回目は51が返る()
+        {
+            Enumerable.Range(1, 50).ToList().ForEach(x => _sut.Increment());
+            
+            var actual = _sut.Increment();
+
+            Assert.AreEqual(51, actual);
         }
     }
 }
