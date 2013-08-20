@@ -29,5 +29,13 @@ namespace MSTestExercise.Test
 
             Assert.AreEqual("aaa", result);
         }
+
+        [TestMethod]
+        public void HelloWorldを入力するとhello_worldが取得できる()
+        {
+            var result = StringUtil.ToSnakeCase("HelloWorld");
+
+            Assert.AreEqual("hello_world", result);
+        }
     }
 }
