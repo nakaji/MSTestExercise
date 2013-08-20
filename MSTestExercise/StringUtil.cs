@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace MSTestExercise
@@ -20,7 +21,7 @@ namespace MSTestExercise
                 buf = buf.Replace(old, "_" + old);
             }
 
-            return buf.StartsWith("_")? buf.Substring(1).ToLower() :buf.ToLower();
+            return Regex.Replace(buf, "^_", "").ToLower();
         }
     }
 }
