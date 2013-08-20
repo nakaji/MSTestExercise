@@ -13,5 +13,13 @@ namespace MSTestExercise.Test
 
             Assert.AreEqual("aaa", result);
         }
+
+        [TestMethod]
+        public void bbbを入力するとbbbが取得できる()
+        {
+            var result = StringUtil.ToSnakeCase("bbb");
+
+            Assert.AreEqual("bbb", result);
+        }
     }
 }
