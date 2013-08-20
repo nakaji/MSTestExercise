@@ -10,6 +10,8 @@ namespace MSTestExercise
     {
         public static int Divide(int x, int y)
         {
+            if (y == 0) throw new ArgumentOutOfRangeException();
+
             return x / y;
         }
     }

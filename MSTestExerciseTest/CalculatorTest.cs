@@ -22,5 +22,12 @@ namespace MSTestExerciseTest
 
             Assert.AreEqual(3, result);
         }
+
+        [TestMethod]
+        [ExpectedException(typeof(System.ArgumentOutOfRangeException))]
+        public void 割り算_0で割るとArgumentOutOfRangeException()
+        {
+            var result = Calculator.Divide(15, 0);
+        }
     }
 }
