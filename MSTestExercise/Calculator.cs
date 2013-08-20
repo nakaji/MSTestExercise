@@ -10,7 +10,7 @@ namespace MSTestExercise
     {
         public static int Divide(int x, int y)
         {
-            return 2;
+            return x / y;
         }
     }
 }
