@@ -10,7 +10,7 @@ namespace MSTestExercise
     {
         public static object ToSnakeCase(string p)
         {
-            return p;
+            return p.ToLower();
         }
     }
 }
