@@ -37,5 +37,13 @@ namespace MSTestExercise.Test
 
             Assert.AreEqual("hello_world", result);
         }
+        
+        [TestMethod]
+        public void practiceMsTestを入力するとpractice_ms_testが取得できる()
+        {
+            var result = StringUtil.ToSnakeCase("practiceMsTest");
+
+            Assert.AreEqual("practice_ms_test", result);
+        }
     }
 }
