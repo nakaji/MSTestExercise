@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="Calculator.cs" />
     <Compile Include="Counter.cs" />
+    <Compile Include="NumberUtil.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StringUtil.cs" />
   </ItemGroup>

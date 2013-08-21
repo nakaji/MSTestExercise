@@ -54,6 +54,7 @@
     <Compile Include="StringUtilTest.cs" />
     <Compile Include="CalculatorTest.cs" />
     <Compile Include="CounterTest.cs" />
+    <Compile Include="NumberUtilTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MSTestExercise\MSTestExercise.csproj">
