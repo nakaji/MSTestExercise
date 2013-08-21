@@ -10,7 +10,7 @@ namespace MSTestExercise
     {
         public static bool IsEven(int num)
         {
-            return true;
+            return (num % 2) == 0;
         }
     }
 }
