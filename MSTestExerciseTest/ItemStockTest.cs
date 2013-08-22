@@ -33,5 +33,26 @@ namespace MSTestExerciseTest
                 Assert.AreEqual(1, sut.GetNum(item));
             }
         }
+
+        [TestClass]
+        public class Itemが1つ追加された状態
+        {
+            private ItemStock sut;
+            private Item item;
+
+            [TestInitialize]
+            public void SetUp()
+            {
+                sut = new ItemStock();
+                sut.Add(item);
+            }
+
+            [TestMethod]
+            public void Itemが1つ追加された状態では1()
+            {
+                Assert.AreEqual(1, sut.GetNum(item));
+            }
+
+        }
     }
 }
