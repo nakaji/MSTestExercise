@@ -8,7 +8,7 @@ namespace MSTestExerciseTest
     public class ItemStockTest
     {
         [TestClass]
-        public class オブジェクト生成
+        public class 初期状態
         {
             private ItemStock sut;
             private Item item;
@@ -20,9 +20,17 @@ namespace MSTestExerciseTest
             }
 
             [TestMethod]
-            public void 生成直後は0()
+            public void 初期状態では0()
             {
                 Assert.AreEqual(0, sut.GetNum(item));
+            }
+
+            [TestMethod]
+            public void 初期状態でItemを追加すると1()
+            {
+                sut.Add(item);
+
+                Assert.AreEqual(1, sut.GetNum(item));
             }
         }
     }

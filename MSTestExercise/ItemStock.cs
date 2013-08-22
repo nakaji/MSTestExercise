@@ -7,9 +7,16 @@ namespace MSTestExercise
 {
     public class ItemStock
     {
+        private int num=0;
+
         public int GetNum(Item item)
         {
-            return 0;
+            return num;
+        }
+
+        public void Add(Item item)
+        {
+            num++;
         }
     }
 
