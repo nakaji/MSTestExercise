@@ -53,6 +53,12 @@ namespace MSTestExerciseTest
                 Assert.AreEqual(1, sut.GetNum(item));
             }
 
+            [TestMethod]
+            public void Itemが1つ追加された状態で同じItemを追加すると2()
+            {
+                sut.Add(item);
+                Assert.AreEqual(2, sut.GetNum(item));
+            }
         }
     }
 }
