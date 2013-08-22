@@ -7,16 +7,23 @@ namespace MSTestExercise
 {
     public class ItemStock
     {
-        private int num=0;
+        private readonly Dictionary<Item, int> _stock = new Dictionary<Item, int>();
 
         public int GetNum(Item item)
         {
-            return num;
+            if (!_stock.ContainsKey(item)) return 0;
+
+            return _stock[item];
         }
 
         public void Add(Item item)
         {
-            num++;
+            if (!_stock.ContainsKey(item))
+            {
+                _stock.Add(item, 1);
+                return;
+            }
+            _stock[item]++;
         }
     }
 

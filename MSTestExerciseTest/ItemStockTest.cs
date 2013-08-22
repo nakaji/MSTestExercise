@@ -11,7 +11,7 @@ namespace MSTestExerciseTest
         public class 初期状態
         {
             private ItemStock sut;
-            private Item item;
+            private Item item=new Item("Book", 2980);
 
             [TestInitialize]
             public void SetUp()
@@ -38,7 +38,7 @@ namespace MSTestExerciseTest
         public class Itemが1つ追加された状態
         {
             private ItemStock sut;
-            private Item item;
+            private Item item = new Item("Book", 2980);
 
             [TestInitialize]
             public void SetUp()
@@ -58,6 +58,16 @@ namespace MSTestExerciseTest
             {
                 sut.Add(item);
                 Assert.AreEqual(2, sut.GetNum(item));
+            }
+
+            [TestMethod]
+            public void Itemが1つ追加された状態で異なるItemを追加すると1()
+            {
+                var anotherItem = new Item("PC", 78000);
+
+                sut.Add(anotherItem);
+                
+                Assert.AreEqual(1, sut.GetNum(item));
             }
         }
     }
