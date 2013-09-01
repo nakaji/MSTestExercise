@@ -8,9 +8,16 @@ namespace MSTestExercise
 {
     public class BackgroundTask
     {
+        private readonly Runnable _runnable;
+
         public BackgroundTask(Runnable runnable)
         {
-            
+            _runnable = runnable;
+        }
+
+        public void Invoke()
+        {
+            _runnable.Run.Start();
         }
     }
 

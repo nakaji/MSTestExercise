@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using MSTestExercise;
@@ -16,6 +17,22 @@ namespace MSTestExerciseTest
             {
                 var sut = new BackgroundTask(new Runnable(new Task(() => { })));
             }
+        }
+
+        [TestMethod]
+        public void Invokeメソッドで処理を実行する()
+        {
+            int count = 0;
+            var sut = new BackgroundTask(new Runnable(new Task(() =>
+                                                               {
+                                                                   Thread.Sleep(500);
+                                                                   count++;
+                                                               })));
+
+            sut.Invoke();
+            Assert.AreEqual(0, count);
+            Thread.Sleep(1000);
+            Assert.AreEqual(1, count);
         }
     }
 
