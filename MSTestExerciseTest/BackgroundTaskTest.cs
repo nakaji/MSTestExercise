@@ -29,9 +29,9 @@ namespace MSTestExerciseTest
                                                                    count++;
                                                                })));
 
-            sut.Invoke();
+            var task = sut.Invoke();
             Assert.AreEqual(0, count);
-            Thread.Sleep(1000);
+            task.Wait();
             Assert.AreEqual(1, count);
         }
     }

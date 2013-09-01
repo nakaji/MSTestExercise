@@ -15,9 +15,11 @@ namespace MSTestExercise
             _runnable = runnable;
         }
 
-        public void Invoke()
+        public Task Invoke()
         {
             _runnable.Run.Start();
+
+            return _runnable.Run;
         }
     }
 
