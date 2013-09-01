@@ -19,7 +19,7 @@ namespace MSTestExerciseTest
             }
         }
 
-        [TestMethod]
+        [TestMethod, Timeout(1000)]
         public void Invokeメソッドで処理を実行する()
         {
             int count = 0;
@@ -30,9 +30,10 @@ namespace MSTestExerciseTest
                                                                })));
 
             var task = sut.Invoke();
+
             Assert.AreEqual(0, count);
-            task.Wait();
-            Assert.AreEqual(1, count);
+            task.ContinueWith(x => Assert.AreEqual(1, count));
+           
         }
     }
 

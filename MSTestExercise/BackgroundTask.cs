@@ -15,11 +15,9 @@ namespace MSTestExercise
             _runnable = runnable;
         }
 
-        public Task Invoke()
+        public async Task Invoke()
         {
-            _runnable.Run.Start();
-
-            return _runnable.Run;
+            await new Task(() => { }); //_runnable.Run;
         }
     }
 
