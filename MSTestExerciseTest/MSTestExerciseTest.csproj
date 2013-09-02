@@ -51,12 +51,12 @@
   </Choose>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StringUtilTest.cs" />
-    <Compile Include="CalculatorTest.cs" />
-    <Compile Include="CounterTest.cs" />
-    <Compile Include="NumberUtilTest.cs" />
-    <Compile Include="ItemStockTest.cs" />
-    <Compile Include="BackgroundTaskTest.cs" />
+    <Compile Include="chap18\StringUtilTest.cs" />
+    <Compile Include="chap18\CalculatorTest.cs" />
+    <Compile Include="chap18\CounterTest.cs" />
+    <Compile Include="chap18\NumberUtilTest.cs" />
+    <Compile Include="chap18\ItemStockTest.cs" />
+    <Compile Include="chap18\BackgroundTaskTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MSTestExercise\MSTestExercise.csproj">
