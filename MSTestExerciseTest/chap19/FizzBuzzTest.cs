@@ -17,6 +17,7 @@ namespace MSTestExerciseTest.chap19
 
             var expected = new List<String>() { "1" };
 
+            Assert.AreEqual(num, result.Count());
             Assert.AreEqual(expected[0], result[0]);
         }
 
@@ -28,6 +29,7 @@ namespace MSTestExerciseTest.chap19
 
             var expected = new List<String>() { "1", "2" };
 
+            Assert.AreEqual(num, result.Count());
             foreach (var i in Enumerable.Range(0, num))
             {
                 Assert.AreEqual(expected[i], result[i]);
@@ -42,6 +44,7 @@ namespace MSTestExerciseTest.chap19
 
             var expected = new List<String>() { "1", "2", "Fizz" };
 
+            Assert.AreEqual(num, result.Count());
             foreach (var i in Enumerable.Range(0, num))
             {
                 Assert.AreEqual(expected[i], result[i]);
@@ -56,6 +59,7 @@ namespace MSTestExerciseTest.chap19
 
             var expected = new List<String>() { "1", "2", "Fizz", "4", "Buzz" };
 
+            Assert.AreEqual(num, result.Count());
             foreach (var i in Enumerable.Range(0, num))
             {
                 Assert.AreEqual(expected[i], result[i]);
