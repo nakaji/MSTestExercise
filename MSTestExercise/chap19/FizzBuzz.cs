@@ -8,9 +8,9 @@ namespace MSTestExercise.chap19
 {
     public class FizzBuzz
     {
-        public static List<String> CreateFizzBuzzList(int p)
+        public static List<String> CreateFizzBuzzList(int num)
         {
-            return new List<String>() {"1"};
+            return Enumerable.Range(1, num).Select(i => i.ToString()).ToList();
         }
     }
 }
