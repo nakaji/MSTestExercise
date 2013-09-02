@@ -40,5 +40,19 @@ namespace MSTestExerciseTest.chap19
             Assert.AreEqual(expected[1], result[1]);
             Assert.AreEqual(expected[2], result[2]);
         }
+
+        [TestMethod]
+        public void 引数が5の時()
+        {
+            var result = FizzBuzz.CreateFizzBuzzList(5);
+
+            var expected = new List<String>() { "1", "2", "Fizz", "4", "Buzz" };
+
+            Assert.AreEqual(expected[0], result[0]);
+            Assert.AreEqual(expected[1], result[1]);
+            Assert.AreEqual(expected[2], result[2]);
+            Assert.AreEqual(expected[3], result[3]);
+            Assert.AreEqual(expected[4], result[4]);
+        }
     }
 }
