@@ -65,5 +65,20 @@ namespace MSTestExerciseTest.chap19
                 Assert.AreEqual(expected[i], result[i]);
             }
         }
+
+        [TestMethod]
+        public void 引数が15の時()
+        {
+            var num = 15;
+            var result = FizzBuzz.CreateFizzBuzzList(num);
+
+            var expected = new List<String>() { "1", "2", "Fizz", "4", "Buzz", "Fizz", "7", "8", "Fizz", "Buzz", "11", "Fizz", "13", "14", "FizzBuzz" };
+
+            Assert.AreEqual(num, result.Count());
+            foreach (var i in Enumerable.Range(0, num))
+            {
+                Assert.AreEqual(expected[i], result[i]);
+            }
+        }
     }
 }

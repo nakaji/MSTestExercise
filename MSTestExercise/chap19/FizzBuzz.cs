@@ -10,7 +10,7 @@ namespace MSTestExercise.chap19
     {
         public static List<String> CreateFizzBuzzList(int num)
         {
-            return Enumerable.Range(1, num).Select(i => i==3 ? "Fizz" :  i==5 ? "Buzz" : i.ToString()).ToList();
+            return Enumerable.Range(1, num).Select(i => i % 15 == 0 ? "FizzBuzz" : i % 3 == 0 ? "Fizz" : i % 5 == 0 ? "Buzz" : i.ToString()).ToList();
         }
     }
 }
