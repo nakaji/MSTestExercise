@@ -42,5 +42,25 @@ namespace MSTestExerciseTest.chap19
                 Assert.AreEqual(0,result.Count());
             }
         }
+
+        [TestClass]
+        public class テキストファイルに2件データが存在する場合
+        {
+            [TestMethod]
+            public void Employeeが2件格納されたリストを返す()
+            {
+                var result = Employee.Load(@"chap19\Data\twoEmployeeFile.txt");
+
+                Assert.AreEqual(2, result.Count());
+
+                Assert.AreEqual("Ichiro", result[0].FirstName);
+                Assert.AreEqual("Tanaka", result[0].LastName);
+                Assert.AreEqual("ichiro@example.com", result[0].Email);
+
+                Assert.AreEqual("Jiro", result[1].FirstName);
+                Assert.AreEqual("Suzuki", result[1].LastName);
+                Assert.AreEqual("jiro@example.com", result[1].Email);
+            }
+        }
     }
 }

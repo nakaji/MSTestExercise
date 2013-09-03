@@ -1,0 +1,2 @@
+﻿Ichiro,Tanaka,ichiro@example.com
+Jiro,Suzuki,jiro@example.com

@@ -21,9 +21,19 @@ namespace MSTestExercise.chap19
 
         public static List<Employee> Load(string fileName)
         {
-            if(!File.Exists(fileName)) throw new FileNotFoundException();
+            if (!File.Exists(fileName)) throw new FileNotFoundException();
 
-            return new List<Employee>();
+            var list = new List<Employee>();
+            var data = File.ReadAllLines(fileName);
+            data.ToList().ForEach(x =>
+                                  {
+                                      var col = x.Split(',');
+                                      list.Add(new Employee(col[0], col[1], col[2]));
+                                  });
+
+
+
+            return list;
         }
     }
 }
