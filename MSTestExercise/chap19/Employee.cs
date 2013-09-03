@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 
@@ -16,6 +17,11 @@ namespace MSTestExercise.chap19
             FirstName = firstName;
             LastName = lastName;
             Email = email;
+        }
+
+        public static void Load(string fileName)
+        {
+            if(!File.Exists(fileName)) throw new FileNotFoundException();
         }
     }
 }
