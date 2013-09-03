@@ -30,10 +30,18 @@ namespace MSTestExercise.chap19
                                       var col = x.Split(',');
                                       list.Add(new Employee(col[0], col[1], col[2]));
                                   });
-
-
-
             return list;
+        }
+
+        public override bool Equals(object obj)
+        {
+            if (obj.GetType() != typeof (Employee)) return false;
+
+            var target = (Employee)obj;
+
+            return FirstName == target.FirstName &&
+                LastName == target.LastName &&
+                Email == target.Email;
         }
     }
 }

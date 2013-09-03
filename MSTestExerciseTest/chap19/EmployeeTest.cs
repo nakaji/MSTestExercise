@@ -53,13 +53,8 @@ namespace MSTestExerciseTest.chap19
 
                 Assert.AreEqual(2, result.Count());
 
-                Assert.AreEqual("Ichiro", result[0].FirstName);
-                Assert.AreEqual("Tanaka", result[0].LastName);
-                Assert.AreEqual("ichiro@example.com", result[0].Email);
-
-                Assert.AreEqual("Jiro", result[1].FirstName);
-                Assert.AreEqual("Suzuki", result[1].LastName);
-                Assert.AreEqual("jiro@example.com", result[1].Email);
+                Assert.AreEqual(new Employee("Ichiro", "Tanaka", "ichiro@example.com"), result[0]);
+                Assert.AreEqual(new Employee("Jiro", "Suzuki", "jiro@example.com"), result[1]);
             }
         }
     }
