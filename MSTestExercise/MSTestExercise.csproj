@@ -45,6 +45,7 @@
     <Compile Include="chap18\ItemStock.cs" />
     <Compile Include="chap18\NumberUtil.cs" />
     <Compile Include="chap19\FizzBuzz.cs" />
+    <Compile Include="chap19\Employee.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="chap18\StringUtil.cs" />
   </ItemGroup>
