@@ -66,6 +66,11 @@
       <Name>MSTestExercise</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="chap19\Data\emptyFIle.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

@@ -19,9 +19,11 @@ namespace MSTestExercise.chap19
             Email = email;
         }
 
-        public static void Load(string fileName)
+        public static List<Employee> Load(string fileName)
         {
             if(!File.Exists(fileName)) throw new FileNotFoundException();
+
+            return new List<Employee>();
         }
     }
 }

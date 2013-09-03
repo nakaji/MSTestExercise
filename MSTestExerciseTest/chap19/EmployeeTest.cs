@@ -3,6 +3,7 @@ using System.IO;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using MSTestExercise;
 using MSTestExercise.chap19;
+using System.Linq;
 
 namespace MSTestExerciseTest.chap19
 {
@@ -27,6 +28,18 @@ namespace MSTestExerciseTest.chap19
             public void FileNotFoundExceptionが発生する()
             {
                 Employee.Load("notExistsFile.txt");
+            }
+        }
+
+        [TestClass]
+        public class テキストファイルが空の場合
+        {
+            [TestMethod]
+            public void 空のリストを返す()
+            {
+                var result  = Employee.Load(@"chap19\Data\emptyFile.txt");
+
+                Assert.AreEqual(0,result.Count());
             }
         }
     }
