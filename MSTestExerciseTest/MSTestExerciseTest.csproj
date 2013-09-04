@@ -50,6 +50,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="chap19\CustomAssert.cs" />
     <Compile Include="chap19\FizzBuzzTest.cs" />
     <Compile Include="chap19\EmployeeTest.cs" />
     <Compile Include="chap19\MultiLineStringTest.cs" />

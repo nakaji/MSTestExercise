@@ -12,7 +12,7 @@ namespace MSTestExerciseTest.chap19
         {
             var result = MultiLineString.Join("Hello", "World");
 
-            Assert.AreEqual("Hello\nWorld", result);
+            CustomAssert.AreEqual("Hello\nWorld", result);
         }
     }
 }
