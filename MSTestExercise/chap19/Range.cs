@@ -15,5 +15,10 @@ namespace MSTestExercise.chap19
             Min = min;
             Max = max;
         }
+
+        public bool Contains(double p)
+        {
+            return false;
+        }
     }
 }

@@ -16,5 +16,13 @@ namespace MSTestExerciseTest.chap19
             Assert.AreEqual(1.1d, range.Min);
             Assert.AreEqual(9.98d, range.Max);
         }
+
+        [TestMethod]
+        public void 最小値未満の場合False()
+        {
+            var sut = new Range(1.1d, 9.98d);
+
+            Assert.IsFalse(sut.Contains(1.099999d));
+        }
     }
 }
