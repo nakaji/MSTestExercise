@@ -32,5 +32,13 @@ namespace MSTestExerciseTest.chap19
 
             Assert.IsTrue(sut.Contains(1.1d));
         }
+
+        [TestMethod]
+        public void 最大値の場合True()
+        {
+            var sut = new Range(1.1d, 9.98d);
+
+            Assert.IsTrue(sut.Contains(9.98d));
+        }
     }
 }
