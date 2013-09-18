@@ -24,5 +24,13 @@ namespace MSTestExerciseTest.chap19
 
             Assert.IsFalse(sut.Contains(1.099999d));
         }
+
+        [TestMethod]
+        public void 最小値の場合True()
+        {
+            var sut = new Range(1.1d, 9.98d);
+
+            Assert.IsTrue(sut.Contains(1.1d));
+        }
     }
 }
