@@ -18,7 +18,7 @@ namespace MSTestExercise.chap19
 
         public bool Contains(double p)
         {
-            return p >= Min;
+            return p >= Min && p <= Max;
         }
     }
 }
