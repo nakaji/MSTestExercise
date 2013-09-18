@@ -48,5 +48,13 @@ namespace MSTestExerciseTest.chap19
 
             Assert.IsFalse(sut.Contains(9.980001d));
         }
+
+        [TestMethod]
+        public void 範囲内はTrue()
+        {
+            var sut = new Range(1.1d, 9.98d);
+
+            Assert.IsTrue(sut.Contains(5.555d));
+        }
     }
 }
