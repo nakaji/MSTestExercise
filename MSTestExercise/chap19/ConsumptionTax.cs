@@ -13,5 +13,10 @@ namespace MSTestExercise.chap19
         {
             _taxRate = taxRate;
         }
+
+        public int Apply(int price)
+        {
+            return price + (price * _taxRate / 100);
+        }
     }
 }
