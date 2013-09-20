@@ -47,6 +47,7 @@
     <Compile Include="chap19\FizzBuzz.cs" />
     <Compile Include="chap19\Employee.cs" />
     <Compile Include="chap19\MultiLineString.cs" />
+    <Compile Include="chap19\ConsumptionTax.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="chap18\StringUtil.cs" />
     <Compile Include="chap19\Range.cs" />

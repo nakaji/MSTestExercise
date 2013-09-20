@@ -55,6 +55,7 @@
     <Compile Include="chap19\EmployeeTest.cs" />
     <Compile Include="chap19\MultiLineStringTest.cs" />
     <Compile Include="chap19\RangeTest.cs" />
+    <Compile Include="chap19\ConsumptionTaxTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="chap18\StringUtilTest.cs" />
     <Compile Include="chap18\CalculatorTest.cs" />
